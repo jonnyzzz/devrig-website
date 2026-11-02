@@ -39,7 +39,7 @@ jobs:
 
           tag = os.environ['RELEASE_TAG']
           target = os.environ['TARGET_REPO']
-          source = 'jonnyzzz/mcp-steroid'
+          source_id = 1142254514
           if not re.fullmatch(r'v?0\.[0-9]+(?:\.[0-9]+)?', tag):
               raise ValueError('Expected an existing stable upstream release tag')
 
@@ -49,6 +49,11 @@ jobs:
               return json.loads(result.stdout)
 
 
+          repository = api(f'repositories/{source_id}')
+          if repository['id'] != source_id:
+              raise ValueError('Unexpected upstream repository identity')
+          source = repository['full_name']
+          print(f'Upstream repository {source_id}: {source}', flush=True)
           upstream = api(f'repos/{source}/releases/tags/{tag}')
           mirror = next(release for release in api(f'repos/{target}/releases?per_page=100')
                         if release['tag_name'] == tag)
