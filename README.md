@@ -13,6 +13,8 @@ published output, captured from the live **https://devrig.dev/** website on
 | Item | Source |
 |---|---|
 | Original project | [MCP Steroid / devrig](https://github.com/jonnyzzz/mcp-steroid) |
+| Upstream repository ID | `1142254514` |
+| Upstream location on 2 November 2026 | [enablelist/mcp-steroid](https://github.com/enablelist/mcp-steroid) |
 | Upstream website deployment commit | [`680b7985686f3f0011708cc2f2c704ebcf755e94`](https://github.com/jonnyzzz/mcp-steroid/commit/680b7985686f3f0011708cc2f2c704ebcf755e94) |
 | Upstream deployment | [GitHub Pages run 31218444119](https://github.com/jonnyzzz/mcp-steroid/actions/runs/31218444119), completed 7 August 2026 |
 | Downloaded website | https://devrig.dev/, captured 2 November 2026 |
