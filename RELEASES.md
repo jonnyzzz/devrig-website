@@ -4,7 +4,7 @@ Original releases: [jonnyzzz/mcp-steroid](https://github.com/jonnyzzz/mcp-steroi
 
 The original repository's immutable GitHub ID is **1142254514**. On 2 November 2026 it moved to [enablelist/mcp-steroid](https://github.com/enablelist/mcp-steroid); the original URLs redirect there.
 
-Verified mirrors: **7 releases, 17 assets, 2,044,050,104 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
+Verified mirrors: **8 releases, 19 assets, 2,231,872,977 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
 
 Assets are copied without modification. Their GitHub-computed mirror digests match both
 the upstream asset digests and the verified local backup. Original release notes, tags,
@@ -82,3 +82,12 @@ Machine-readable provenance and digests: [release-mirrors.json](release-mirrors.
 |---|---|---|
 | [EULA](https://github.com/jonnyzzz/devrig-website/releases/download/v0.92.0/EULA) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
 | [mcp-steroid-0.92.0-59b78976.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.92.0/mcp-steroid-0.92.0-59b78976.zip) | 186,536,450 | `8f01755fe14568315e59f70c6195e72878b3fbee928f1dacea6b8b52db5867e7` |
+
+## v0.91.0
+
+[Mirror](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.91.0) · [Original release](https://github.com/jonnyzzz/mcp-steroid/releases/tag/v0.91.0) · originally published 2026-03-28T15:34:05Z
+
+| Asset | Bytes | SHA-256 |
+|---|---|---|
+| [LICENSE](https://github.com/jonnyzzz/devrig-website/releases/download/v0.91.0/LICENSE) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
+| [mcp-steroid-0.91.0-13655642.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.91.0/mcp-steroid-0.91.0-13655642.zip) | 187,809,103 | `a2e6c519440d003769c8a55928dbd623c2a57aaba0b837d2fdefc090ff178e88` |
