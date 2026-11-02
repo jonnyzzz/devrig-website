@@ -2,7 +2,7 @@
 
 Original releases: [jonnyzzz/mcp-steroid](https://github.com/jonnyzzz/mcp-steroid/releases).
 
-Verified mirrors: **2 releases, 6 assets, 838,714,771 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
+Verified mirrors: **3 releases, 9 assets, 1,273,435,856 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
 
 Assets are copied without modification. Their GitHub-computed mirror digests match both
 the upstream asset digests and the verified local backup. Original release notes, tags,
@@ -34,3 +34,13 @@ Machine-readable provenance and digests: [release-mirrors.json](release-mirrors.
 | [devrig-0.101-40690055.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.101/devrig-0.101-40690055.zip) | 236,864,567 | `a7c8cf0d16e23506538bcf7edef6f3164e4b6029cffb37adae2d27f99684e689` |
 | [EULA](https://github.com/jonnyzzz/devrig-website/releases/download/v0.101/EULA) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
 | [mcp-steroid-0.101-40690055.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.101/mcp-steroid-0.101-40690055.zip) | 199,907,273 | `798c9217d335bdf9edd6eff9a59501e8df5beb377612760c97f6d5e0f710bbed` |
+
+## v0.100
+
+[Mirror](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.100) · [Original release](https://github.com/jonnyzzz/mcp-steroid/releases/tag/v0.100) · originally published 2026-06-01T23:21:40Z
+
+| Asset | Bytes | SHA-256 |
+|---|---|---|
+| [devrig-0.100-409f23a2.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.100/devrig-0.100-409f23a2.zip) | 235,469,333 | `0fbf6961ef07f0e73b73ce6841634996a9acc60c037a2cbbfd163c100659303c` |
+| [EULA](https://github.com/jonnyzzz/devrig-website/releases/download/v0.100/EULA) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
+| [mcp-steroid-0.100-409f23a2.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.100/mcp-steroid-0.100-409f23a2.zip) | 199,237,982 | `be5717a4b87d840c7b47603a08167d73ae422d875ce920e4338c97e276ce35d6` |
