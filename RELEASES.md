@@ -4,7 +4,7 @@ Original releases: [jonnyzzz/mcp-steroid](https://github.com/jonnyzzz/mcp-steroi
 
 The original repository's immutable GitHub ID is **1142254514**. On 2 November 2026 it moved to [JetBrains/mcp-steroid](https://github.com/JetBrains/mcp-steroid); the original URLs redirect there.
 
-Verified mirrors: **10 releases, 23 assets, 2,606,397,780 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
+Verified mirrors: **11 releases, 26 assets, 2,788,603,204 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
 
 Assets are copied without modification. Their GitHub-computed mirror digests match both
 the upstream asset digests and the verified local backup. Original release notes, tags,
@@ -109,3 +109,13 @@ Machine-readable provenance and digests: [release-mirrors.json](release-mirrors.
 |---|---|---|
 | [LICENSE](https://github.com/jonnyzzz/devrig-website/releases/download/0.89.0/LICENSE) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
 | [mcp-steroid-0.89.0-b8388824.zip](https://github.com/jonnyzzz/devrig-website/releases/download/0.89.0/mcp-steroid-0.89.0-b8388824.zip) | 187,133,063 | `71e50254953e90189f26a1149bb976731a0fef82c1961cbb7c102864c6f904a9` |
+
+## 0.88.0
+
+[Mirror](https://github.com/jonnyzzz/devrig-website/releases/tag/0.88.0) · [Original release](https://github.com/jonnyzzz/mcp-steroid/releases/tag/0.88.0) · originally published 2026-03-02T18:20:44Z
+
+| Asset | Bytes | SHA-256 |
+|---|---|---|
+| [EULA](https://github.com/jonnyzzz/devrig-website/releases/download/0.88.0/EULA) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
+| [LICENSE](https://github.com/jonnyzzz/devrig-website/releases/download/0.88.0/LICENSE) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
+| [mcp-steroid-0.88.0-b1747bb.zip](https://github.com/jonnyzzz/devrig-website/releases/download/0.88.0/mcp-steroid-0.88.0-b1747bb.zip) | 182,177,884 | `9874d56c017cb0b6808d8a44959a10968eb020ae1b4ad7dbd65845eaee0bbd91` |
