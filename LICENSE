@@ -1,3 +1,29 @@
+PROVENANCE AND LICENSING NOTICE
+
+This repository republishes the prebuilt devrig.dev website originating from
+https://github.com/jonnyzzz/mcp-steroid, including its website/ Hugo sources and
+generated installer and update files.
+
+The 42 website content files were captured from https://devrig.dev/ on
+2 November 2026 and imported unchanged from:
+  devrig.dev-published-0.102-2026-11-02.tar.gz
+  SHA-256: 0141d8c07a40868e8b0668685b359fe45bb7db86013eae4b2f93a9059abe3b1e
+
+The upstream deployment was built from commit:
+  680b7985686f3f0011708cc2f2c704ebcf755e94
+  https://github.com/jonnyzzz/mcp-steroid/actions/runs/31218444119
+
+The upstream license is reproduced verbatim below, including its copyright
+notices for Eugene Petrenko and JetBrains. Existing notices in the imported
+files are retained. This provenance notice is informational and does not
+modify the upstream license terms.
+
+The separate EULA file concerns the compiled MCP Steroid plugin binaries.
+Externally linked binaries and services retain their own applicable terms.
+See README.md for the import and hosting history.
+
+----- BEGIN VERBATIM UPSTREAM LICENSE -----
+
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -48,7 +74,7 @@
       "Contribution" shall mean any work of authorship, including
       the original version of the Work and any modifications or additions
       to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
+      submitted to the Licensor for inclusion in the Work by the copyright owner
       or by an individual or Legal Entity authorized to submit on behalf of
       the copyright owner. For the purposes of this definition, "submitted"
       means any form of electronic, verbal, or written communication sent
@@ -60,7 +86,7 @@
       designated in writing by the copyright owner as "Not a Contribution."
 
       "Contributor" shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
+      on behalf of whom a Contribution has been received by the Licensor and
       subsequently incorporated within the Work.
 
    2. Grant of Copyright License. Subject to the terms and conditions of
@@ -106,7 +132,7 @@
       (d) If the Work includes a "NOTICE" text file as part of its
           distribution, then any Derivative Works that You distribute must
           include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
+          within such NOTICE file, excluding any notices that do not
           pertain to any part of the Derivative Works, in at least one
           of the following places: within a NOTICE text file distributed
           as part of the Derivative Works; within the Source form or
@@ -175,18 +201,8 @@
 
    END OF TERMS AND CONDITIONS
 
-   APPENDIX: How to apply the Apache License to your work.
-
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
-
-   Copyright [yyyy] [name of copyright owner]
+   Copyright 2025-2026 Eugene Petrenko (mcp@jonnyzzz.com)
+   Copyright 2025-2026 JetBrains
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
