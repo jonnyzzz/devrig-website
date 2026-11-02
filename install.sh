@@ -1,4 +1,5 @@
 #!/bin/sh
+# Modified 2026-11-02: release asset links now use verified mirrors in jonnyzzz/devrig-website; original website content from jonnyzzz/mcp-steroid.
 # devrig bootstrap installer (macOS + Linux) - https://devrig.dev/install.sh
 #
 #   curl -fsSL https://devrig.dev/install.sh | sh
@@ -15,7 +16,7 @@
 set -eu
 
 VERSION='0.102'
-DEVRIG_URL='https://github.com/jonnyzzz/mcp-steroid/releases/download/v0.102/devrig-0.102.0-r-c68d8f15d.zip'
+DEVRIG_URL='https://github.com/jonnyzzz/devrig-website/releases/download/v0.102/devrig-0.102.0-r-c68d8f15d.zip'
 DEVRIG_SHA256='c0489cc64218aa601d5fd171c26685a4d102899607079c6edcb30564cf71d538'
 DEVRIG_FORMAT='zip'
 # The devrig launcher subpath INSIDE the unpacked dist (computed + asserted by the generator from the

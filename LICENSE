@@ -21,6 +21,9 @@ modify the upstream license terms.
 
 The separate EULA file concerns the compiled MCP Steroid plugin binaries.
 Externally linked binaries and services retain their own applicable terms.
+After import, release download URLs were updated to verified mirrors in
+jonnyzzz/devrig-website. The binary assets are copied unchanged.
+See RELEASES.md for per-asset provenance and verification.
 See README.md for the import and hosting history.
 
 ----- BEGIN VERBATIM UPSTREAM LICENSE -----

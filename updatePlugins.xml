@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Modified 2026-11-02: release asset links now use verified mirrors in jonnyzzz/devrig-website; original website content from jonnyzzz/mcp-steroid. -->
 <plugins>
-  <plugin id="com.jonnyzzz.mcp-steroid" url="https://github.com/jonnyzzz/mcp-steroid/releases/download/v0.102/mcp-steroid-0.102.0-r-c68d8f15d.zip" version="0.102.0-r-c68d8f15d">
+  <plugin id="com.jonnyzzz.mcp-steroid" url="https://github.com/jonnyzzz/devrig-website/releases/download/v0.102/mcp-steroid-0.102.0-r-c68d8f15d.zip" version="0.102.0-r-c68d8f15d">
     <idea-version since-build="261"/>
     <name>MCP Steroid</name>
     <vendor>jonnyzzz.com</vendor>

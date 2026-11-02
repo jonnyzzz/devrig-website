@@ -20,7 +20,9 @@ published output, captured from the live **https://devrig.dev/** website on
 | Import archive | `devrig.dev-published-0.102-2026-11-02.tar.gz` |
 | Archive SHA-256 | `0141d8c07a40868e8b0668685b359fe45bb7db86013eae4b2f93a9059abe3b1e` |
 
-All **42 website content files** were copied unchanged from that archive. They
+All **42 website content files** were copied unchanged from that archive.
+Subsequent changes redirect release download links to the verified mirrors in
+this repository and add modification notices to the affected files. They
 include the HTML pages, documentation, release notes, CSS, SVG assets, EULA,
 `install.sh`, `install.ps1`, `version.json` and `updatePlugins.xml`.
 The archive was made from the deployed HTTP responses; it was not rebuilt from
@@ -45,9 +47,12 @@ Existing notices in the imported website files are preserved. This repository
 retains those upstream attributions and license terms.
 
 The included [EULA](EULA) is a separate upstream document for the **compiled MCP
-Steroid plugin binaries**. The website's installer and download links still point
-to the original GitHub release assets and pinned JDK vendors; those external
-binaries and services retain their own applicable terms.
+Steroid plugin binaries**. Release assets are mirrored in this repository's GitHub Releases, and website
+download links are updated as each mirror is verified. [RELEASES.md](RELEASES.md)
+and [release-mirrors.json](release-mirrors.json) record original release URLs,
+publication dates, upstream tag commits and per-asset SHA-256 digests.
+The installer-pinned JDK downloads continue to use their original vendors.
+The binaries and external services retain their own applicable terms.
 
 ## Hosting
 
