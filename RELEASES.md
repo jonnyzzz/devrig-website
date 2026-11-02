@@ -2,7 +2,7 @@
 
 Original releases: [jonnyzzz/mcp-steroid](https://github.com/jonnyzzz/mcp-steroid/releases).
 
-Verified mirrors: **5 releases, 13 assets, 1,663,499,561 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
+Verified mirrors: **6 releases, 15 assets, 1,857,499,884 bytes**. Latest: [v0.102](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.102).
 
 Assets are copied without modification. Their GitHub-computed mirror digests match both
 the upstream asset digests and the verified local backup. Original release notes, tags,
@@ -62,3 +62,12 @@ Machine-readable provenance and digests: [release-mirrors.json](release-mirrors.
 |---|---|---|
 | [EULA](https://github.com/jonnyzzz/devrig-website/releases/download/v0.94.0/EULA) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
 | [mcp-steroid-0.94.0-8682a5ce.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.94.0/mcp-steroid-0.94.0-8682a5ce.zip) | 194,469,362 | `634ddaa03f32426146dfe93335be1a921dc687fee9235a7dfa33c33b189bb3df` |
+
+## v0.93.0
+
+[Mirror](https://github.com/jonnyzzz/devrig-website/releases/tag/v0.93.0) · [Original release](https://github.com/jonnyzzz/mcp-steroid/releases/tag/v0.93.0) · originally published 2026-04-18T07:11:24Z
+
+| Asset | Bytes | SHA-256 |
+|---|---|---|
+| [EULA](https://github.com/jonnyzzz/devrig-website/releases/download/v0.93.0/EULA) | 13,770 | `bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564` |
+| [mcp-steroid-0.93.0-effb0b5a.zip](https://github.com/jonnyzzz/devrig-website/releases/download/v0.93.0/mcp-steroid-0.93.0-effb0b5a.zip) | 193,986,553 | `7fb6a965c8b01eccea10cb54222e7aaad055770abca5a93a3f43b506667b93eb` |
