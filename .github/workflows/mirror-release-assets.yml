@@ -1,0 +1,100 @@
+name: Mirror upstream release assets
+run-name: Mirror ${{ inputs.tag }} release assets
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing upstream stable release tag to copy into its prepared draft
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-asset-mirror
+  cancel-in-progress: false
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ inputs.tag }}
+      TARGET_REPO: ${{ github.repository }}
+    steps:
+      - name: Download, verify and upload original release assets
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          import re
+          import subprocess
+          import tempfile
+          from pathlib import Path
+
+          tag = os.environ['RELEASE_TAG']
+          target = os.environ['TARGET_REPO']
+          source = 'jonnyzzz/mcp-steroid'
+          if not re.fullmatch(r'v?0\.[0-9]+(?:\.[0-9]+)?', tag):
+              raise ValueError('Expected an existing stable upstream release tag')
+
+
+          def api(path):
+              result = subprocess.run(['gh', 'api', path], check=True, capture_output=True, text=True)
+              return json.loads(result.stdout)
+
+
+          upstream = api(f'repos/{source}/releases/tags/{tag}')
+          mirror = next(release for release in api(f'repos/{target}/releases?per_page=100')
+                        if release['tag_name'] == tag)
+          existing = {asset['name']: asset for asset in mirror['assets']}
+          with tempfile.TemporaryDirectory(prefix='release-mirror-') as directory:
+              for asset in upstream['assets']:
+                  name = asset['name']
+                  if Path(name).name != name or name in ('.', '..'):
+                      raise ValueError('Unsafe release asset filename')
+                  expected = asset.get('digest') or ''
+                  if not re.fullmatch(r'sha256:[a-f0-9]{64}', expected):
+                      raise ValueError(f'Missing upstream SHA-256 digest: {name}')
+                  current = existing.get(name)
+                  if current:
+                      if current['size'] != asset['size'] or current.get('digest') != expected:
+                          raise ValueError(f'Existing mirror asset differs: {name}')
+                      print(f'Already verified {name}', flush=True)
+                      continue
+                  if not mirror['draft']:
+                      raise ValueError('Only draft releases may receive new assets')
+                  url = asset['browser_download_url']
+                  if not url.startswith(f'https://github.com/{source}/releases/download/{tag}/'):
+                      raise ValueError('Unexpected upstream download URL')
+                  path = Path(directory) / name
+                  print(f'Downloading {name}: {asset["size"]:,} bytes', flush=True)
+                  subprocess.run(['curl', '--fail', '--location', '--silent', '--show-error',
+                                  '--retry', '3', '--connect-timeout', '20', '--max-time', '600',
+                                  url, '--output', str(path)], check=True)
+                  with path.open('rb') as stream:
+                      digest = hashlib.file_digest(stream, 'sha256').hexdigest()
+                  if path.stat().st_size != asset['size'] or 'sha256:' + digest != expected:
+                      raise ValueError(f'Upstream download verification failed: {name}')
+                  label = asset.get('label')
+                  filename = str(path) + ('#' + label if label else '')
+                  subprocess.run(['gh', 'release', 'upload', tag, filename, '--repo', target], check=True)
+                  print(f'Uploaded and locally verified {name}', flush=True)
+                  path.unlink()
+
+          mirror = api(f'repos/{target}/releases/{mirror["id"]}')
+          copied = {asset['name']: asset for asset in mirror['assets']}
+          if set(copied) != {asset['name'] for asset in upstream['assets']}:
+              raise ValueError('Mirror asset inventory differs from upstream')
+          for asset in upstream['assets']:
+              current = copied[asset['name']]
+              if (current['state'] != 'uploaded' or current['size'] != asset['size']
+                      or current.get('digest') != asset['digest']):
+                  raise ValueError(f'GitHub mirror verification failed: {asset["name"]}')
+          print(f'Verified all {len(copied)} GitHub mirror asset digests for {tag}', flush=True)
+          PY
