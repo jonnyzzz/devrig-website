@@ -116,11 +116,40 @@
           "verification": "upstream, local backup and GitHub mirror SHA-256 digests match"
         }
       ]
+    },
+    {
+      "tag": "v0.95.0",
+      "original_release_url": "https://github.com/jonnyzzz/mcp-steroid/releases/tag/v0.95.0",
+      "original_published_at": "2026-05-11T13:38:16Z",
+      "upstream_tag_commit": "b14969e109f0efd9747798ad959e90433f449169",
+      "mirrored_release_url": "https://github.com/jonnyzzz/devrig-website/releases/tag/v0.95.0",
+      "mirrored_release_id": 431313829,
+      "mirrored_at": "2026-11-02T10:15:40.428512+00:00",
+      "assets": [
+        {
+          "name": "EULA",
+          "bytes": 13770,
+          "sha256": "bf998fbd602341ebc23bed58023927d46392cf40e0deff2c585ee3a963d36564",
+          "original_url": "https://github.com/jonnyzzz/mcp-steroid/releases/download/v0.95.0/EULA",
+          "mirror_url": "https://github.com/jonnyzzz/devrig-website/releases/download/v0.95.0/EULA",
+          "mirror_asset_id": 701327293,
+          "verification": "upstream, local backup and GitHub mirror SHA-256 digests match"
+        },
+        {
+          "name": "mcp-steroid-0.95.0-b14969e1.zip",
+          "bytes": 195566803,
+          "sha256": "56a6caa5a6927abf61b25c0f731743e7c6911c8e7cc10986d7ef9665d9caa605",
+          "original_url": "https://github.com/jonnyzzz/mcp-steroid/releases/download/v0.95.0/mcp-steroid-0.95.0-b14969e1.zip",
+          "mirror_url": "https://github.com/jonnyzzz/devrig-website/releases/download/v0.95.0/mcp-steroid-0.95.0-b14969e1.zip",
+          "mirror_asset_id": 701327460,
+          "verification": "upstream, local backup and GitHub mirror SHA-256 digests match"
+        }
+      ]
     }
   ],
   "totals": {
-    "releases": 3,
-    "assets": 9,
-    "bytes": 1273435856
+    "releases": 4,
+    "assets": 11,
+    "bytes": 1469016429
   }
 }
