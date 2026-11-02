@@ -1,8 +1,9 @@
 PROVENANCE AND LICENSING NOTICE
 
 This repository republishes the prebuilt devrig.dev website originating from
-https://github.com/jonnyzzz/mcp-steroid, including its website/ Hugo sources and
-generated installer and update files.
+https://github.com/jonnyzzz/mcp-steroid. The upstream site was built from that
+project's website/ Hugo sources and generated installer and update files.
+This repository contains the published output captured from the live site.
 
 The 42 website content files were captured from https://devrig.dev/ on
 2 November 2026 and imported unchanged from:

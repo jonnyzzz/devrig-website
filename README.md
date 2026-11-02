@@ -1,10 +1,12 @@
 # devrig.dev website
 
-This repository hosts the prebuilt website originally developed in
-[jonnyzzz/mcp-steroid](https://github.com/jonnyzzz/mcp-steroid), including its
-[`website/` Hugo sources](https://github.com/jonnyzzz/mcp-steroid/tree/680b7985686f3f0011708cc2f2c704ebcf755e94/website)
-and generated installer and update files. It was populated from a downloaded
-snapshot of the live **https://devrig.dev/** website on **2 November 2026**.
+This repository hosts a prebuilt snapshot of the website from
+[jonnyzzz/mcp-steroid](https://github.com/jonnyzzz/mcp-steroid). The upstream site
+was built from that project's
+[`website/` Hugo sources](https://github.com/jonnyzzz/mcp-steroid/tree/680b7985686f3f0011708cc2f2c704ebcf755e94/website),
+together with generated installer and update files. This repository contains the
+published output, captured from the live **https://devrig.dev/** website on
+**2 November 2026**.
 
 ## Origin and import
 
